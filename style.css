@@ -1,0 +1,413 @@
+/* ========================================
+   ESTILOS GERAIS
+======================================== */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+}
+
+/* Classe importante para evitar que o pop-up sobreponha o rodapé */
+body.popup-active {
+    padding-bottom: 250px;
+}
+
+/* ========================================
+   CABEÇALHO PRINCIPAL
+======================================== */
+.main-header {
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.main-header h1 { 
+    margin: 20px 0;
+    font-weight: 900;
+    font-size: 4em; 
+}
+
+/* ========================================
+   CONTEÚDO PRINCIPAL
+======================================== */
+.main-content {
+    padding: 0;
+    background-color: transparent;
+    margin: 5px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.call-to-action {
+    text-align: center;
+    padding: 5px 0;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.impact-text {
+    font-size: 1.1em;
+    color: #444343;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.action-prompt {
+    margin-top: 40px;
+    font-size: 1.1em;
+    color: #444343;
+    font-weight: 100;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.descubra-text {
+    margin-top: 40px;
+    font-size: 1.1em;
+    color: #06c;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.valida-text {
+    margin-top: -15px;
+    font-size: 0.8em;
+    color: rgb(90, 90, 90);
+    font-weight: 100;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.criptografados-text {
+    margin-top: 5px;
+    font-size: 0.6em;
+    color: rgb(137, 138, 139);
+    font-weight: 100;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+/* ========================================
+   RODAPÉ PRINCIPAL
+======================================== */
+.main-footer {
+    background-color: transparent;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: none;
+}
+
+/* ========================================
+   CLASSES PARA GRIFAR TEXTO
+======================================== */
+.grifado-Azul {
+    background-color: #06c;
+    color: #ffffff;
+    padding: 2px 3px;
+    border-radius: 2px;
+    display: inline;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+.grifado-Vermelho {
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+    padding: 2px 3px;
+    border-radius: 2px;
+    display: inline;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+/* ========================================
+   CARROSSEL
+======================================== */
+.carousel-section {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: transparent;
+    margin-bottom: -5px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.carousel-section h2 {
+    color: #0056b3;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 7px;
+    box-shadow: 0 0 3px rgba(63, 62, 62, 0.692);
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+}
+
+.carousel-slides img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 10;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-dots {
+    text-align: center;
+    padding: 15px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.692);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dot.active {
+    background-color: rgba(0, 0, 0, 0.13);
+    transform: scale(1.2);
+}
+
+/* ========================================
+   POPUP
+======================================== */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.popup-overlay.show {
+    opacity: 1;
+}
+
+.popup-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 500px;
+    position: relative;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    margin: 0 auto;
+}
+
+.popup-title {
+    font-size: 2.2em;
+    font-weight: 900;
+    color: #06c;
+    margin-bottom: 10px;
+}
+
+.popup-stats {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #252424;
+    margin-bottom: 5px;
+}
+
+.popup-countdown {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #252424;
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+
+.popup-countdown span {
+    font-size: 1.2em;
+    color: #06c;
+    font-weight: bold;
+}
+
+.alert-message {
+    font-size: 1.1em;
+    color: #ff0000;
+    font-weight: bold;
+    margin: 10px 0;
+    min-height: 25px;
+}
+
+/* ========================================
+   BOTÃO PISCANTE DO POPUP
+======================================== */
+.popup-button {
+    margin-top: 10px;
+    margin-bottom: 7px;
+    background: linear-gradient(45deg, #06c, #06c);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: block;
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.popup-button.show {
+    opacity: 1 ;
+}
+
+/* Estilo do botão piscante */
+.popup-button.blinking-button {
+    background: linear-gradient(45deg, #06c, #06c);
+    box-shadow: 0 4px 15px rgb(0, 183, 255);
+    animation: blinkPopup 1.2s infinite;
+}
+
+.popup-button.blinking-button:hover {
+    transform: scale(1.05);
+}
+
+.popup-button.blinking-button:active {
+    transform: scale(0.95);
+}
+
+/* Animação de piscar */
+@keyframes blinkPopup {
+    0%, 50% {
+        opacity: 1;
+        box-shadow: 0 4px 15px rgba(18, 4, 99, 0.6);
+    }
+    51%, 100% {
+        opacity: 0.4;
+        box-shadow: 0 4px 15px rgba(123, 108, 209, 0.2);
+    }
+}
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2.2em;
+    }
+    
+    .main-header p {
+        font-size: 1em;
+    }
+    
+    .impact-text {
+        font-size: 1.1em;
+    }
+    
+    .action-prompt {
+        font-size: 0.9em;
+    }
+    
+    .carousel-button {
+        padding: 8px 12px;
+        font-size: 1.2em;
+    }
+    
+    .carousel-dots {
+        padding: 10px 0;
+    }
+    
+    .dot {
+        width: 8px;
+        height: 8px;
+        margin: 0 4px;
+    }
+    
+    .popup-content {
+        max-width: 90%;
+        padding: 20px;
+    }
+    
+    .popup-title {
+        font-size: 2em;
+    }
+    
+    .popup-stats, .popup-countdown {
+        font-size: 1.2em;
+    }
+    
+    .alert-message {
+        font-size: 1em;
+    }
+    
+    .popup-countdown span {
+        font-size: 1.3em;
+    }
+    
+    body.popup-active {
+        padding-bottom: 300px;
+    }
+}

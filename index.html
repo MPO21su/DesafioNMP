@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="main-header">
+            <h1>Parabéns!</h1>
+            <p><strong><span class="grifado-Azul">VOCÊ TERÁ DIAS MELHORES PELA FRENTE</span></strong></p>
+            <p>Você é <b>1 dos poucos homens</b> corajosos buscando ajuda - 88% preferem negar o problema.</p>
+        </header>
+
+        <main class="main-content">
+            <section class="carousel-section">
+                <div class="carousel-container">
+                    <div class="carousel-slides">
+                        <img src="img/01.png" alt="Minha Foto Legal 1">
+                        <img src="img/02.png" alt="Minha Foto Legal 2">
+                        <img src="img/03.png" alt="Minha Foto Legal 3">
+                        <img src="img/04.png" alt="Minha Foto Legal 4">
+                        <img src="img/05.png" alt="Minha Foto Legal 5">
+                        <img src="img/06.png" alt="Minha Foto Legal 6">
+                        <img src="img/07.png" alt="Minha Foto Legal 7">
+                    </div>
+                    <button class="carousel-button prev" aria-label="Voltar">&#10094;</button>
+                    <button class="carousel-button next" aria-label="Avançar">&#10095;</button>
+                    <div class="carousel-dots"></div>
+                </div>
+            </section>
+            
+            <section class="call-to-action">
+                <h2><strong><span class="grifado-Vermelho">"Alerta Médico"</span></strong></h2>
+                <p class="impact-text">97% dos <u><em>viciados em pornografia</em></u> já têm danos cerebrais <u><em>SILENCIOSOS</em></u> e não sabem!</p>
+                <p class="action-prompt">Seu cérebro pode estar se deteriorando AGORA mesmo sem sintomas..</p>
+                <p class="descubra-text">DESCUBRA AGORA EM 2 MINUTOS (GRÁTIS) QUAL O NÍVEL DO SEU VÍCIO: ⬇️</p>
+                <p class="valida-text"><em>Método validado por: Sociedade Brasileira de Sexualidade Humana | USP Neurociências</em></p>
+                <p class="criptografados-text">Seus dados são criptografados. Garantimos 100% de privacidade.🔒</p>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>&copy; Copyright © 2025 Desafio NMP..</p>
+        </footer>
+    </div>
+    
+    <!-- POPUP -->
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-content">
+            <p class="popup-title">ATENÇÃO</p>
+            <p class="popup-countdown"> <span id="pessoas-count">478</span> fizeram o teste hoje</p>
+            <p class="popup-countdown">Restam <span id="vagas-count">19</span> vagas disponíveis!</p>
+            <p id="alert-message" class="alert-message"></p>
+            
+            <!-- Botão com efeito piscante -->
+            <button id="popup-button" class="main-button popup-button blinking-button">
+                Fazer meu teste agora!
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
