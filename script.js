@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         intervaloVagas: 10000, // 5 segundos (5000ms)
         
         // LINK DE REDIRECIONAMENTO
-        linkRedirecionamento: 'https://quiz.cakto.com.br/o-ponto-final-quiz-LACVDk',
+        linkRedirecionamento: 'https://quiz.cakto.com.br/ebook-quiropraxia-hoNDsM',
         
         // VAGAS INICIAIS
         vagasIniciais: 19,
@@ -526,4 +526,5 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('💡 DICA: Use window.debugPopup.createMissingElements() para criar elementos de teste');
         console.log('💡 DICA: Use window.debugPopup.checkElements() para verificar elementos novamente');
     }
+
 });
